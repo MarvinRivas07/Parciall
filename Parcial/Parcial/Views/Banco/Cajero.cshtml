@@ -1,0 +1,16 @@
+﻿@model Parcial.Models.Cajero
+
+@{
+    ViewBag.Title = "Cajero";
+}
+
+@using (Html.BeginForm("Cajero", "Banco", FormMethod.Post))
+{
+
+    <h2>Escriba la cantidad deseada</h2>
+
+    @Html.TextBoxFor(caj => caj.Monto)
+
+    <input type="submit" value="Retirar" />
+
+}
